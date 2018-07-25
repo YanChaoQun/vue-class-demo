@@ -76,8 +76,8 @@
         }
         </style>
         <div id="app">
-                <div class="per" @click="per()">
-                    <a class="son" href="/" @click.prevent.stop="son()"></a>
+                <div class="per" @click.prevent="per()">
+                    <a class="son" href="/" @click.stop="son()"></a>
                 </div>
         </div>
         <script>
@@ -112,8 +112,8 @@
         }
         </style>
         <div id="app">
-                <div class="per" @click="per()">
-                    <div class="son" @click.capture="son()"></div>
+                <div class="per" @click.capture="per()">
+                    <div class="son" @click="son()"></div>
                 </div>
         </div>
         <script>
